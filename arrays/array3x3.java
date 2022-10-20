@@ -18,7 +18,10 @@ public class App {
         String[][] Array_3x3 = {
             {" A", " B", " C"},
             {" D", " E", " F"},
-            {" G", " H", " I"}
+            {" G", " H", " I"},
+            {" J", " K", " L"},
+            {" M", " N", " O"},
+            {" P", " Q", " R"},
 
         };
         // System.out.println(Array_3x3[1][1]);
@@ -26,10 +29,17 @@ public class App {
         // System.out.println(Array_3x3[0][1]);
         
 
-        for (int row = 0; row < Array_3x3.length; row++) {
+        for (int row = 0; row < Array_3x3.length; row ++) {
+            for (int column = 0; column < Array_3x3[row].length; column ++) {
+                // System.out.print(Array_3x3[row][column] + " ");
 
-            for (int column = 0; column < Array_3x3.length; column ++) {
-                System.out.print(Array_3x3[row][column]);
+                if (row % 2 == 0 && column % 2 == 0) {
+                    System.out.print(Array_3x3[row][column]);
+                    
+                } else if (!(row % 2 == 0) && (!(column % 2 == 0))) {
+                    System.out.print(" " + Array_3x3[row][column] + " ");
+
+                }              
             }
             System.out.println(" ");
         }
