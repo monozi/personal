@@ -1,0 +1,224 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+       
+        String [][] mdWord = {{"S", "L", "A", "M"}, 
+                            {"T", "I", "L","E"}, 
+                            {"E", "A", "T", "S"}, 
+                            {"P", "R", "O", "S"}};
+        
+
+        // 4 WORDS
+        System.out.println("1-4 WORDS (DIAGONAL)");
+        
+        for (int rows = 0; rows < mdWord.length; rows++) {
+            for (int columns = 0; columns < mdWord.length; columns++) {
+                System.out.println(mdWord[columns][rows]);  
+            } 
+            System.out.println("");
+        }
+
+        System.out.println("__________________________________________________________________________________" + "\n");
+
+        System.out.println ("5-8 WORDS" + "\n");
+        for (int roww = 0; roww < mdWord.length; roww++) {
+            for (int columnn = 0; columnn < mdWord.length; columnn++) {
+                System.out.print(mdWord[roww][columnn]);  
+            } 
+            System.out.println("");
+        }
+
+         // ==========================================================================================
+
+       System.out.println("__________________________________________________________________________________" + "\n");
+       System.out.println("WORD 9: " + "\n");
+       for (int row = mdWord.length - 1; row >= 0; row--) {
+          System.out.print("");
+        for (int column = 0; column < mdWord.length; column++) {
+          if (column == 0) {
+            System.out.print(mdWord[row][column]);
+          } 
+          else{
+            System.out.println(" ");
+          }
+        }
+      }
+      
+
+     // ==========================================================================================
+
+      System.out.println("__________________________________________________________________________________" + "\n");
+      System.out.println("WORD 10: " + "\n");
+      for (int i = mdWord.length - 1; i >= 0; i--) {
+        System.out.print("");
+       for (int j = 0; j < 4; j++) {
+         if (j == 1) {
+          System.out.print(mdWord[i][j]);
+         } 
+         else{
+          System.out.println(" ");
+         }
+       }
+     }
+     
+     
+    // ==========================================================================================
+
+     System.out.println("\n__________________________________________________________________________________" + "\n");
+     System.out.println("WORD 11: " + "\n");
+     for (int i = mdWord.length - 2; i >= 0; i--) {
+      System.out.println("");
+      for (int j = 0; j < mdWord.length; j++) {
+        if (j == 1) {
+          System.out.print(mdWord[i][j]);
+        } 
+        else{
+          System.out.print(" ");
+        }
+      }
+    }
+    
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 12: " + "\n");
+    for (int row = 0; row < mdWord.length - 1; row++) {
+      System.out.println("");
+     for (int column = mdWord.length; column >= 0; column--) {
+       if (column == 2) {
+        System.out.print(mdWord[row][column]);
+       } 
+       else{
+        System.out.print(" ");
+       }
+     }
+   }
+   
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 13: " + "\n");
+    for (int row = 0; row < 3; row++) {
+        System.out.println("");
+     for (int column = 0; column < 3; column++) {
+       if ((row == 0 && column == 0) || (row == 1 && column == 1) || (row == 2 && column == 2)) {
+        System.out.print(mdWord[row][column]);
+       } 
+       else{
+        System.out.print(" ");
+       }
+     }
+   }
+   
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 14: " + "\n");
+    for (int row = 0; row < 4; row++) {
+        System.out.println(" ");
+     for (int column = 0; column < 4; column++) {
+       if ((row == 3 && column == 0) || (row == 2 && column == 1) || (row == 1 && column == 2) || (row == 0 && column == 3)) {
+        System.out.print(mdWord[row][column]);
+       } 
+       else{
+        System.out.print(" ");
+       }
+     }
+   }
+   
+
+ // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 15: " + "\n");
+    for (int row = mdWord.length - 1; row >= 0; row--) {
+      System.out.println("");
+        for (int column = 0; column < mdWord.length; column++) {
+            if ((row == 3 && column == 2) || (row == 2 && column == 1) || (row == 1 && column == 0)) {
+              System.out.print(mdWord[row][column]);
+            }
+            else{
+              System.out.print(" ");
+            }
+        }
+    }
+     
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 16: " + "\n");
+    for (int row = 0; row < mdWord.length; row++) {
+      System.out.println("");
+        for (int column = 0; column < mdWord.length; column++) {
+            if ((row == 0 && column == 0) || (row == 1 && column == 1) || (row == 2 && column == 2) || (row == 3 && column == 3)) {
+              System.out.print(mdWord[row][column]);
+                
+            } 
+            else{
+              System.out.print(" ");
+            }
+        }
+    }
+   
+    
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 17: " + "\n");
+    for (int row = mdWord.length - 1; row >= 0; row--) {
+      System.out.println("");
+        for (int column = 0; column < mdWord.length; column++) {
+            if ((row == 3 && column == 0) || (row == 2 && column == 0) || (row == 1 && column == 0)) {
+              System.out.print(mdWord[row][column]);
+            }
+            else{
+              System.out.print(" ");
+            } 
+        }
+    }
+    
+
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 18: " + "\n");
+    for (int row = 0; row < mdWord.length; row++) {
+        
+        for (int column = 0; column < mdWord.length; column++) {
+            if ((row == 3 && column == 0) || (row == 3 && column == 1) || (row == 3 && column == 2)) {
+              System.out.print(mdWord[row][column]);
+            }
+        }
+    }
+    
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 19: " + "\n");
+    for (int row = 0; row < mdWord.length; row++) {
+        
+        for (int column = 0; column < mdWord.length; column++) {
+            if (row == 2) {
+              System.out.print(mdWord[row][column]);
+            }
+        }
+   }
+   
+
+    // ==========================================================================================
+
+    System.out.println("\n__________________________________________________________________________________" + "\n");
+    System.out.println("WORD 20: " + "\n");
+    for (int column = mdWord.length - 2; column >= 0; column--) {
+        
+        for (int row = 0; row < mdWord.length; row++) {
+            if (row == 1) {
+              System.out.print(mdWord[row][column] + "\n");
+            } 
+        }
+   }
+   
+    }
+}
