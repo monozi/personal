@@ -2,10 +2,10 @@ import java.util.*;
 
 public class ArrayChallenge {
 	// Instantiation
-    public static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     
     // Array initialization
-    public static int array[] = { 15, 30, 25, 19, 30, 40 }; 
+    static int array[] = { 15, 30, 25, 19, 30, 40 }; 
 
     public static void main(String[] args) {
         printOut();
@@ -41,12 +41,19 @@ public class ArrayChallenge {
                                                  
     // Array Value Checker Method
     static boolean checker() {              
-        boolean mtCheck = false;                        
-        for (int x = 0; x < array.length; x++) {    			// 
-            if (array[x] != 0) {                    			// These lines of code determine whether
-                mtCheck = false;  								// all array index values are zero. 												//
-            } 
+        int checkVal = 0;
+		for (int j = 0; j < array.length; j++) {				// 
+			if (array[j] != 0) {								// These lines of code determine whether 
+				continue;										// all array index values are zero.
+			} else {											//
+				checkVal++;										
+			}
+		}
+        if (checkVal == 6) {
+            return true;
         }
-        return mtCheck;
-    }
+        else {
+            return false;
+        }
+	}
 }
