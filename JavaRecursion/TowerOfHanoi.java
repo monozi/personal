@@ -38,23 +38,22 @@ public class TOH {
         int n = sc.nextInt(); // Number of disks
 // For creating a new file in the source code
         FileWriter fw = new FileWriter("solution.txt");
-        
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write()
 // Calls the "towerOfHanoi" method
-        towerOfHanoi(n, 'A', 'B', 'C', null);
+        towerOfHanoi(n, 'A', 'B', 'C');
+        bw.close();
     }
 // For recursive method
-    public static void towerOfHanoi(int n, char first_rod, char second_rod, char third_rod, BufferedWriter bw) throws IOException {
-        bw = new BufferedWriter(new FileWriter("Factorial_Results.txt"));
-        bw.write("Move disk 1 from rod " + first_rod + " to rod " + third_rod);
+    public static void towerOfHanoi(int n, char first_rod, char second_rod, char third_rod) throws IOException {
         // Prints the movement from the old disks to be transferred to the new rod.
         if (n == 1) {
             System.out.println("Move disk 1 from rod " + first_rod + " to rod " + third_rod);
             return;
         }
 // This section demonstrates where each disk is placed until its order is achieved.
-        towerOfHanoi(n - 1, first_rod, third_rod, second_rod, bw);
+        towerOfHanoi(n - 1, first_rod, third_rod, second_rod);
         System.out.println("Move disk " + n + " from rod " + first_rod + " to rod " + third_rod);
-        towerOfHanoi(n - 1, second_rod, first_rod, third_rod, bw);
-        bw.close();
+        towerOfHanoi(n - 1, second_rod, first_rod, third_rod);
     }
 }
