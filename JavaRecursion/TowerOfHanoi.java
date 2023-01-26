@@ -1,7 +1,23 @@
-/*
+/**
+ * 
+ * TOH.java
+ * 
+ * Purpose: 
+ * 
+ * Input:
+ * 
+ * Output:
+ * 
+ * Error Handling:
  * 
  * 
- * FOR DOCUMENTATION
+ * Additional Notes:
+ * - This program create a new file or open an existing one using the 'FileWriter' class and the 'BufferedWriter'class
+ * - This program uses the 'write()' method to write the solution string to the file.
+ * - In the methods, check if the number of discs is 1. If it is, simply move the disc from the first_pole to the second_pole and return.
+ * - If the number of disks is greater than 1, use recursion to move the top n-1 disks from the first_pole to the third_pole.
+ * - Move the last remaining disk from the first_pole to the second_pole.
+ * - This program uses recursion to move the n-1 disks from the third_pole to the second_pole.
  * 
  * @author 	    John Angelo A. Basilio
  * @author	    Dhan Micheal L. Tamparong
@@ -9,7 +25,6 @@
  * @version     1.0
  * @since       2023-01-26
  */
-
 
 // Instantiation
 import java.io.*;
