@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationalBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/educationalAttainmentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Educational Attainment"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chckboxElementary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elementary" />
+
+            <EditText
+                android:id="@+id/edtTxtSchoolname1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the name of the school"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtProgram1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the educational program"
+                android:inputType="text" />
+
+
+            <CheckBox
+                android:id="@+id/chckboxSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secondary" />
+
+            <EditText
+                android:id="@+id/edtTxtSchoolname2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the name of the school"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtProgram2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the educational program"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/chckboxVocational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vocational" />
+
+            <EditText
+                android:id="@+id/edtTxtSchoolname3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the name of the school"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtProgram3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the educational program"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/chckboxCollege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College" />
+
+            <EditText
+                android:id="@+id/edtTxtSchoolname4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the name of the school"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtProgram4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your course/program"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/chckboxGraduateStudies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graduate Studies" />
+
+            <EditText
+                android:id="@+id/edtTxtSchoolname5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter the name of the school"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtProgram5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your course/program"
+                android:inputType="text" />
+
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:onClick="nextPage"
+                android:text="NEXT" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

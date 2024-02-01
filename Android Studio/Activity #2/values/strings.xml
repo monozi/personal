@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FINAL PROJECT</string>
+    <string-array name="relationships">
+        <item>Select Relationship</item>        <!-- 0 -->
+        <item>Mother</item>        <!-- 1 -->
+        <item>Father</item>        <!-- 2 -->
+        <item>Brother</item>        <!-- 3 -->
+        <item>Sister</item>        <!-- 4 -->
+        <item>Wife</item>        <!-- 5 -->
+        <item>Husband</item>        <!-- 6 -->
+        <item>Others</item>        <!-- 7 -->
+    </string-array>
+</resources>
