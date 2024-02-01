@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9DCFE"
+    tools:context=".Menu_Activity">
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="284dp"
+        android:layout_height="80dp"
+        android:background="#3F51B5"
+        android:text="INFORMATION ENCODING"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <Button
+        android:id="@+id/grade"
+        android:layout_width="284dp"
+        android:layout_height="80dp"
+        android:background="#3F51B5"
+        android:text="GRADE ENCODING"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:background="#3F51B5"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grade"
+        app:layout_constraintVertical_bias="0.343" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
